@@ -11,7 +11,7 @@ export default function DistrictPicker({parks, district, setDistrict}) {
         <LoadingPicker />
       ) : (
         <Picker
-          selectedValue={district == null ? 'İlçe Seçiniz' : district}
+          selectedValue={district}
           onValueChange={(itemValue) => setDistrict(itemValue)}>
           {[...new Set(parks.map((p) => p.district))].sort().map((e) => (
             <Picker.Item key={e} label={e} value={e} />

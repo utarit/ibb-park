@@ -1,6 +1,5 @@
 import React from 'react';
-import {View, ScrollView, StyleSheet, Text} from 'react-native';
-import DetailCard from './DetailCard';
+import {View, ScrollView, StyleSheet} from 'react-native';
 import {LoadingCard} from './LoadingComponents';
 import ParkCard from './ParkCard';
 import DistrictPicker from './Picker';
@@ -9,7 +8,6 @@ export default function TopLayer({
   parks,
   district,
   setDistrict,
-  selectedPark,
   setSelectedPark,
   mapRef,
 }) {

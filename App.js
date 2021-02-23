@@ -25,7 +25,6 @@ const App = () => {
       let response = await fetch('https://api.ibb.gov.tr/ispark/Park');
       let json = await response.json();
       setParkData(json);
-      console.log(json[0]);
     } catch (error) {
       console.error(error);
     }
